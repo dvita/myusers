@@ -21,3 +21,5 @@ search("users", "platform:#{node['platform']}").each do |user_data|
 		end
 	end
 end
+
+include_recipe 'myusers::groups'
